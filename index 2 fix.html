@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website LSM</title>
+    <link rel="stylesheet" href="file:///C:/projects/website-lsm/styles.css">
+
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#attendance">Daftar Hadir</a></li>
+            <li><a href="#material">Materi</a></li>
+            <li><a href="#exercise">Latihan</a></li>
+            <li><a href="#forum">Forum</a></li>
+            <li><a href="#evaluation">Evaluasi</a></li>
+            <li><a href="#game">Game Edukasi</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Selamat Datang di Website LMS Kami</h1>
+        </header>
+
+        <section id="home">
+            <h2>Beranda</h2>
+            <p>future.edu bersama kami pembelajaran akan menjadi lebih menyenangkan.</p>
+        </section>
+
+        <section id="attendance">
+            <h2>Daftar Hadir</h2>
+            <p>Silhakan isi daftar hadir dengan teliti dan cermat.</p>
+            <form> 
+                <section>
+                    <h2>Daftar Hadir peserta didik</h2>
+                    <form action="#" method="POST">
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                        
+                        <label for="NIS">Nomor Induk Siswa:</label>
+                        <input type="text" id="NIS" name="Nomor Induk Siswa" required><br><br>
+
+                        <input type="submit" value="submit">
+                    </form>
+                </section>
+                
+        </section>
+
+        <section id="material">
+            <h2>Materi Pembelajaran</h2>
+            <!-- Tombol untuk Materi 1 -->
+             <button class="dropdown-btn">Materi 1</button>
+             <div class="dropdown-container">
+        <ul>
+            <li><a href="#" class="file-link">File PDF Materi 1</a></li>
+            <li><a href="#" class="file-link">Video Materi 1</a></li>
+            <li><a href="#" class="file-link">File contoh soal Materi 1</a></li>
+        </ul>
+    </div>
+
+            <!-- Tombol untuk Materi 2 -->
+             <button class="dropdown-btn">Materi 2</button>
+             <div class="dropdown-container">
+        <ul>
+            <li><a href="#" class="file-link">File PDF Materi 2</a></li>
+            <li><a href="#" class="file-link">Video Materi 2</a></li>
+            <li><a href="#" class="file-link">File contoh soal Materi 2</a></li>
+        </ul>
+    </div>
+</section>
+
+<!-- Hanya akan ditampilkan jika admin yang login -->
+<section id="upload-section">
+    <h2>Upload Materi Baru</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="filePDF">Modul Ajar:</label>
+        <input type="file" id="filePDF" name="filePDF"><br><br>
+
+        <label for="fileVideo">Vidio Pembelajaran:</label>
+        <input type="file" id="fileVideo" name="fileVideo"><br><br>
+
+        <label for="fileWord">Contoh soal:</label>
+        <input type="file" id="filecontohsoal" name="filecontohsoal"><br><br>
+
+        <input type="submit" value="submit">
+    </form>
+</section>
+
+        </section>
+
+        <section id="exercise">
+            <h2>Latihan</h2>
+            <p>Latihan soal untuk menguji pemahaman materi.</p>
+            <p>Silhakan klik latihan soal sesuai dengan materi yang telah dipelajari</p>
+        </section>
+
+        <section id="forum">
+            <h2>Forum</h2>
+            <p>Tempat diskusi dan tanya jawab antara peserta dan pengajar.</p>
+            <p>Seluruh perserta didik bebas berdiskusi terkait pelajaran kepada pengajar</p>
+        </section>
+
+        <section id="evaluation">
+            <h2>Evaluasi</h2>
+            <p>Halaman untuk evaluasi akhir dan feedback dari peserta.</p>
+        </section>
+
+        <section id="game">
+            <h2>Game Edukasi</h2>
+            <p>Game edukasi untuk menambah wawasan secara menyenangkan.</p>
+        </section>
+    </div>
+<script src="script.js"></script>  
+
+<upload/>
+<chmod 755 uploads/>
+
+</body>
+</html>
